@@ -1,0 +1,113 @@
+{% load static%}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>CraftoMart</title>
+  <!-- Bootstrap , fonts & icons  -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <link rel="stylesheet" href="{% static 'fonts/icon-font/css/style.css'%}">
+  <link rel="stylesheet" href="{% static 'fonts/typography-font/typo.css'%}">
+  <link rel="stylesheet" href="{% static 'fonts/fontawesome-5/css/all.css'%}">
+  <link href="https://fonts.googleapis.com/css2?family=Karla:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Gothic+A1:wght@400;500;700;900&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800;900&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800;900&display=swap" rel="stylesheet">
+  <!-- Plugin'stylesheets  -->
+  <link rel="stylesheet" href="{% static 'plugins/aos/aos.min.css'%}">
+  <link rel="stylesheet" href="{% static 'plugins/fancybox/jquery.fancybox.min.css'%}">
+  <!-- Vendor stylesheets  -->
+  <link rel="stylesheet" href="{% static 'css/main2.css'%}">
+  <!-- Custom stylesheet -->
+</head>
+<body data-theme-mode-panel-active data-theme="light" style="font-family: 'Mazzard H';overflow-y: hidden;">
+  <div class="site-wrapper overflow-hidden position-relative">
+    <!--Site Header Area -->
+    <header class="site-header site-header--menu-center dark-mode-texts landing-17-menu  site-header--absolute site-header--sticky">
+      <div class="container">
+        <nav class="navbar site-navbar">
+          <!-- Brand Logo-->
+          <div class="brand-logo">
+            <a href="{% url 'home_index'  %}">
+              <h3 class="light-version-logo" style="color:#50E3C2;">CraftoMart</h3>
+              </a>
+          </div>
+          <div class="menu-block-wrapper">
+            <div class="menu-overlay"></div>
+            <nav class="menu-block" id="append-menu-header">
+              <div class="mobile-menu-head">
+                <div class="go-back">
+                  <i class="fa fa-angle-left"></i>
+                </div>
+                <div class="current-menu-title"></div>
+                <div class="mobile-menu-close">&times;</div>
+              </div>
+              <ul class="site-menu-main">
+                <!-- <li class="nav-item nav-item-has-children">
+                  <a href="{% url 'store' %}" class="nav-link-item drop-trigger">Store</a>
+                </li>
+                <li class="nav-item">
+                  <a href="#" class="nav-link-item">Our Partners</a>
+                </li>
+                <li class="nav-item">
+                  <a href="#" class="nav-link-item">About Us</a>
+                </li> -->
+              </ul>
+            </nav>
+          </div>
+          <div class="header-btns  header-btn-l-17 ms-auto d-none d-xs-inline-flex align-items-center">
+            <a class="btn sign-in-btn focus-reset" href="{% url 'customer_login' %}">
+              Sign in
+            </a>
+            <a class="btn sign-in-btn focus-reset" href="{% url 'customer_register' %}">
+              Sign up
+            </a>
+          </div>
+          <!-- mobile menu trigger -->
+          <div class="mobile-menu-trigger">
+            <span></span>
+          </div>
+          <!--/.Mobile Menu Hamburger Ends-->
+        </nav>
+      </div>
+    </header>
+    <!-- navbar- -->
+    <!-- Hero Area -->
+  <div class="hero-area-l-17 position-relative">
+      <div class="container">
+        <div class="row position-relative justify-content-center">
+          <div class="col-xxl-6 col-xl-7 col-lg-8 col-md-11 order-lg-1 order-1" data-aos="fade-right" data-aos-duration="800" data-aos-once="true">
+            <div class="content text-center">
+              <h1>Hi there! Join with us & Stay with us...</h1>
+              <p>"Promote your own Brand; You are your own Marketer!"</p>
+              <a href="{% url 'artisan_register' %}" class="btn">Register as a Partner</a>
+              <span>Or <a href="{% url 'artisan_login' %}" style="color: white;"><h6>Log in</h6></a></span>
+            </div>
+          </div>
+        </div>
+      </div>
+        <div class="text-center p-4" style="color: white;height: 83px;">
+          © 2022
+         <span>CraftoMart</span> 
+        </div>
+    </div>
+   
+    </div>
+    
+   
+    <!--Feature Area -->
+  <!--Vendor Scripts -->
+  <script src="{% static 'js/vendor.min.js'%}"></script>
+  <!-- Plugin's Scripts -->
+  <script src="{% static '/plugins/fancybox/jquery.fancybox.min.js'%}"></script>
+  <script src="{% static '/plugins/aos/aos.min.js'%}"></script>
+  <script src="{% static '/plugins/menu/menu.js'%}"></script>
+  <!-- Activation Script -->
+  <script src="{% static 'js/custom.js'%}"></script>
+  </div>
+</body>
+</html>
